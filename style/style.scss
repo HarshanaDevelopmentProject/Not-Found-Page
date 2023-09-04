@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgb(6, 52, 213) 9.35%, rgba(217, 30, 52, 1) 50%, rgba(145, 206, 15, 1) 100%);
+}
+
+.row {
+  width: 1300px;
+  height: 600px;
+
+  display: flex;
+}
+
+.left-side {
+  width: 45%;
+
+  height: 100%;
+
+  img {
+    width: 500px;
+    height: 500px;
+    margin: 10px 10px 10px 40px;
+  }
+
+}
+
+.right-side {
+  width: 60%;
+
+  height: 100%;
+
+  h1 {
+
+    font-size: 300px;
+    font-family: 'ADLaM Display', cursive;
+    -webkit-text-stroke: 2px rgba(5, 250, 88, 1);
+    font-style: italic;
+    font-weight: bold;
+
+
+  }
+
+  h2 {
+    font-size: 53px;
+    color: rgba(5, 250, 88, 1);
+    -webkit-text-stroke: 3px black;
+    font-family: 'Irish Grover', cursive;
+    font-style: italic;
+  }
+
+  button {
+    width: 300px;
+    height: 50px;
+    border-bottom-width: 5px;
+    border-color: #CE0F0F;
+    border-radius: 50px 20px 50px 20px;
+    margin: 50px 60px 30px 200px;
+    background: linear-gradient(180deg, rgba(11, 213, 226, 1) 0%, rgba(1, 2, 2, 1) 95%);
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Aclonica', sans-serif;
+    color: #87ee8d;
+    box-shadow: 5px 5px 3px #87ee8d;
+    animation: backToHome 1s ease-in-out infinite;
+
+    &:hover {
+      cursor: pointer;
+      color: black;
+      text-decoration: underline;
+      background: linear-gradient(180deg, rgba(217, 121, 131, 0.45) 0%, rgba(4, 26, 4, 0.3) 95%);
+    }
+  }
+
+}
+
+@keyframes backToHome {
+  0% {
+    width: 300px;
+    height: 50px;
+
+  }
+  50% {
+    width: 320px;
+    height: 55px;
+    box-shadow: 5px 5px 20px 20px #27ee3d;
+  }
+  100%{
+    width: 300px;
+    height: 50px;
+  }
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Aclonica&family=Irish+Grover&display=swap');
+
